@@ -25,9 +25,10 @@ classifiers = [
 mcp-security-gateway = "mcp_security_gateway.__main__:main"
 
 [project.urls]
-Homepage = "https://github.com/cyberdub/mcp-security-gateway"
-Repository = "https://github.com/cyberdub/mcp-security-gateway"
+Homepage = "https://github.com/cyberdub-ai/mcp-security-gateway"
+Repository = "https://github.com/cyberdub-ai/mcp-security-gateway"
 Author = "https://cyberdub.su"
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]
+

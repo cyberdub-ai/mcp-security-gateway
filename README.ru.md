@@ -15,7 +15,7 @@
 
 ```bash
 python demo/run_attack_demo.py
-pytest -v
+python -m unittest discover -s tests -v
 ```
 
 Запуск поверх любого существующего stdio MCP-сервера:
@@ -28,3 +28,4 @@ python -m mcp_security_gateway \
 ```
 
 English documentation: [README.md](README.md) · Автор: Алексей Жуйков ([cyberdub.su](https://cyberdub.su))
+

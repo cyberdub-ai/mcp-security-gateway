@@ -77,3 +77,4 @@ def load_policy(path: str) -> GatewayPolicy:
         poison_patterns=patterns,
         default_deny_unlisted=bool(raw.get("default_deny_unlisted", True)),
     )
+

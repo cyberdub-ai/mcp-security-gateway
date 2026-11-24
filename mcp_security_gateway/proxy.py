@@ -116,3 +116,4 @@ class StdioMCPProxy:
                 self._proc.wait(timeout=3)
             except subprocess.TimeoutExpired:
                 self._proc.kill()
+

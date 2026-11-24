@@ -16,3 +16,4 @@ USER 10001:10001
 
 ENTRYPOINT ["mcp-security-gateway", "--policy", "/app/policy.example.json", "--audit", "/tmp/audit.jsonl", "--"]
 CMD ["python", "/app/demo/vulnerable_mcp_server.py"]
+

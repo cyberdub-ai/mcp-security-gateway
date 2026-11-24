@@ -242,3 +242,4 @@ class MCPSecurityGateway:
                 "</UNTRUSTED_TOOL_OUTPUT>"
             ),
         }
+

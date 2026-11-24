@@ -23,14 +23,14 @@ Connecting an LLM agent to third-party or internal MCP servers exposes four prod
 ## Quickstart (30 seconds, zero `pip install` required)
 
 ```bash
-git clone https://github.com/cyberdub/mcp-security-gateway.git
+git clone https://github.com/cyberdub-ai/mcp-security-gateway.git
 cd mcp-security-gateway
 
 # Run the live side-by-side attack & defense demo
 python demo/run_attack_demo.py
 
-# Run the full unit + E2E test suite
-pytest -v
+# Run the full unit + E2E test suite (stdlib unittest, or pytest -v)
+python -m unittest discover -s tests -v
 ```
 
 ## Wrap Any Existing stdio MCP Server
@@ -93,3 +93,4 @@ The bundled `docker-compose.yml` enforces `read_only: true`, `cap_drop: [ALL]`, 
 
 Built by **Alexey Zhuykov** — Telecom & AI Infrastructure Architect (19+ years in ISP operations, BGP/IPv6/Linux SRE, Neo4j Certified Professional / GDS / GenAI, MCP Security).  
 Portfolio: [cyberdub.su](https://cyberdub.su) · Russian version: [README.ru.md](README.ru.md)
+

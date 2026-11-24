@@ -99,3 +99,4 @@ class HashChainedAuditLogger:
                 prev = claimed
                 count += 1
         return True, count, "ok"
+
