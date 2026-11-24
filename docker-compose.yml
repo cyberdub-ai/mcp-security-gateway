@@ -1,0 +1,16 @@
+services:
+  mcp-gateway:
+    build: .
+    stdin_open: true
+    tty: false
+    read_only: true
+    tmpfs:
+      - /tmp:size=16m,noexec,nosuid,nodev
+    security_opt:
+      - no-new-privileges:true
+    cap_drop:
+      - ALL
+    pids_limit: 64
+    mem_limit: 128m
+    cpus: "0.5"
+    network_mode: "none"

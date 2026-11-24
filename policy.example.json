@@ -1,0 +1,32 @@
+{
+  "jail_root": "./demo/mock_fs/logs",
+  "approval_env_var": "MCP_APPROVAL_TOKEN",
+  "expected_approval_token": "APPROVED-BY-OPERATOR",
+  "default_deny_unlisted": true,
+  "tools": {
+    "format_currency": {
+      "mode": "read_only",
+      "allowed_args": ["amount", "currency"],
+      "max_calls_per_minute": 60
+    },
+    "read_ticket": {
+      "mode": "read_only",
+      "allowed_args": ["ticket_id"],
+      "untrusted_output": true,
+      "max_calls_per_minute": 30
+    },
+    "read_log": {
+      "mode": "read_only",
+      "allowed_args": ["filename"],
+      "path_jail_arg": "filename",
+      "filename_pattern": "^[a-zA-Z0-9._-]{1,64}$",
+      "max_calls_per_minute": 30
+    },
+    "restart_service": {
+      "mode": "mutating",
+      "allowed_args": ["service_name"],
+      "requires_approval": true,
+      "max_calls_per_minute": 5
+    }
+  }
+}

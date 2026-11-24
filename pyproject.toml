@@ -1,0 +1,33 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "mcp-security-gateway"
+version = "0.1.0"
+description = "Zero-dependency Zero-Trust Security Policy Proxy for Model Context Protocol (MCP) stdio servers"
+readme = "README.md"
+license = { text = "MIT" }
+requires-python = ">=3.11"
+authors = [{ name = "Alexey Zhuykov", email = "alexey.zhuykov@gmail.com" }]
+keywords = ["mcp", "model-context-protocol", "ai-security", "prompt-injection", "zero-trust", "llm-security"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "Intended Audience :: System Administrators",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Security",
+]
+
+[project.scripts]
+mcp-security-gateway = "mcp_security_gateway.__main__:main"
+
+[project.urls]
+Homepage = "https://github.com/cyberdub/mcp-security-gateway"
+Repository = "https://github.com/cyberdub/mcp-security-gateway"
+Author = "https://cyberdub.su"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
